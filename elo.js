@@ -1,3 +1,5 @@
+const { pow, round } = Math
+
 /**
  * The constant. Maximum value to be won/lost.
  */
@@ -10,9 +12,7 @@ const K = 32
  * @returns {number}
  */
 export const expected = (playerRating, rivalRating) =>
-  parseFloat(
-    (1 / (1 + Math.pow(10, (rivalRating - playerRating) / 400))).toFixed(2),
-  )
+  parseFloat((1 / (1 + pow(10, (rivalRating - playerRating) / 400))).toFixed(2))
 
 /**
  * Gets the new rating of the target player.
@@ -22,7 +22,7 @@ export const expected = (playerRating, rivalRating) =>
  * @returns {number}
  */
 export const newRating = (playerRating, rivalRating, score) =>
-  Math.round(playerRating + K * (score - expected(playerRating, rivalRating)))
+  round(playerRating + K * (score - expected(playerRating, rivalRating)))
 
 /**
  * Gets the rating difference of the target player.
