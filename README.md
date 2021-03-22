@@ -2,6 +2,14 @@
 
 A simple ELO system lib.
 
+## Installation
+
+To install the latest version:
+```
+# NPM
+npm i simplelo
+```
+
 ## Documentation
 
 This library only has three functions.
