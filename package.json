@@ -1,5 +1,5 @@
 {
-  "name": "elo",
+  "name": "simplelo",
   "version": "1.0.0",
   "description": "A simple ELO system lib",
   "main": "elo.js",
