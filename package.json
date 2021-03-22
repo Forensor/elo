@@ -1,0 +1,16 @@
+{
+  "name": "elo",
+  "version": "1.0.0",
+  "description": "A simple ELO system lib",
+  "main": "elo.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Forensor/elo.git"
+  },
+  "author": "forensor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Forensor/elo/issues"
+  },
+  "homepage": "https://github.com/Forensor/elo#readme"
+}
